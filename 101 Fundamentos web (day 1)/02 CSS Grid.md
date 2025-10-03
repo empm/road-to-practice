@@ -85,6 +85,7 @@
 ```
 
 La celda `D`, ocupa el tamaño de dos columnas (`grid-column: span2`), empezando desde la primera (`grid-column: 1`) > `grid-column: 1 / span 2;`
+
 ![[Pasted image 20251002105200.png]]
 
 ---
@@ -130,7 +131,7 @@ Conforme se hace pequeño el contenedor, **disminuyen las columnas** automática
 .grid{
   display: grid;
   /* Se colocan tantas columnas como en 70% quepan con tamaño de 4rem */
-  grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;           /* Espacios */
 }
 
